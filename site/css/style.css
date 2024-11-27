@@ -50,6 +50,19 @@ header {
     border-bottom: 2px solid #ffd700; /* Linha amarela de destaque */
 }
 
+/* Container do cabeçalho */
+.header-container {
+    display: flex;
+    justify-content: space-between; /* Distribui espaço entre os itens */
+    align-items: center; /* Alinha verticalmente os itens */
+    padding: 0 20px; /* Espaçamento lateral */
+ }
+ /* Estilo da imagem no cabeçalho */
+ .logo {
+    width: 100px; /* Largura da imagem */
+    height: auto; /* Mantém as proporções da imagem */
+ }
+
 /* Estilo para o título do cabeçalho */
 header h1 {
     margin: 0;

@@ -3,12 +3,66 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #000000; /* Fundo preto */
+    background-color: linear-gradient(to bottom, #000000, #4b0082); /* Fundo preto */
     color: #f4f4f4; /* Texto claro */
     transition: background-color 0.5s ease, color 0.5s ease; /* Transições suaves */
     opacity: 1; /* Início visível */
     animation: fadeIn 0.5s ease; /* Animação de fade-in ao carregar */
 }
+
+/* Estilo geral da página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000; /* Fundo preto */
+    color: #ffd700; /* Texto amarelo */
+    text-align: center;
+ }
+ /* Seções de mídia (imagem e vídeo) */
+ .media-container {
+    margin: 20px auto; /* Espaçamento externo para separar as seções */
+    max-width: 800px; /* Largura máxima da mídia */
+ }
+ /* Estilo da mídia (imagem e vídeo) */
+ .media {
+    display: block;
+    width: 100%; /* Ocupa toda a largura do container */
+    max-width: 100%; /* Restringe a largura máxima */
+    height: auto; /* Mantém a proporção original */
+    border: 3px solid #4b0082; /* Borda roxa */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra para destacar */
+ }
+ /* Estilo da descrição */
+ .media-description {
+    margin-top: 10px; /* Espaço entre mídia e texto */
+    font-size: 1rem; /* Tamanho do texto */
+    color: #f4f4f4; /* Texto branco */
+ }
+
+/* Estilo do background com gradiente animado */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(90deg, #000000, #4b0082, #000000);
+    background-size: 300% 300%;
+    animation: gradientAnimation 6s ease infinite;
+    color: #f4f4f4;
+ }
+ /* Animação do gradiente */
+ @keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+ }
 
 /* Animação de fade-in */
 @keyframes fadeIn {
@@ -43,11 +97,11 @@ html {
 
 /* Estilo para o cabeçalho */
 header {
-    background: linear-gradient(to bottom, #ffd700, #4b0082); /* Gradiente de amarelo para roxo */
+    background: linear-gradient(to bottom, #000000, #4b0082); /* Gradiente de amarelo para roxo */
     color: #ffffff; /* Texto branco */
     text-align: center;
     padding: 1em;
-    border-bottom: 2px solid #ffd700; /* Linha amarela de destaque */
+    border-bottom: 2px solid #ffffff; /* Linha amarela de destaque */
 }
 
 /* Container do cabeçalho */
@@ -123,8 +177,8 @@ button:hover {
 
 /* Estilo para o rodapé */
 footer {
-    background: linear-gradient(to top, #4b0082, #ffd700); /* Gradiente inverso */
-    color: #000; /* Texto preto */
+    background: linear-gradient(to top, #000000, #4b0082); /* Gradiente inverso */
+    color: #ffffff; /* Texto preto */
     text-align: center;
     padding: 10px;
     margin-top: 20px;

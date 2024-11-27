@@ -10,6 +10,55 @@ body {
     animation: fadeIn 0.5s ease; /* Animação de fade-in ao carregar */
 }
 
+/* Fundo para a página de Ciências Humanas */
+body.humanas {
+    background-image: url('../img/humanas.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.6); /* Camada preta com 60% de opacidade */
+    background-blend-mode: darken; /* Mistura a camada preta com a imagem */
+    height: 100vh; /* Garante que o fundo ocupe toda a altura da tela */
+    margin: 0; /* Remove a margem padrão */
+    padding: 0; /* Remove o padding padrão */
+ }
+ /* Fundo para a página de Ciências da Natureza */
+ body.natureza {
+    background-image: url('../img/natureza.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.6); /* Camada preta com 60% de opacidade */
+    background-blend-mode: darken; /* Mistura a camada preta com a imagem */
+    height: 100vh; /* Garante que o fundo ocupe toda a altura da tela */
+    margin: 0; /* Remove a margem padrão */
+    padding: 0; /* Remove o padding padrão */
+ }
+  /* Fundo para a página de Linguagens */
+  body.linguagens {
+    background-image: url('../img/linguagens.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.6); /* Camada preta com 60% de opacidade */
+    background-blend-mode: darken; /* Mistura a camada preta com a imagem */
+    height: 100vh; /* Garante que o fundo ocupe toda a altura da tela */
+    margin: 0; /* Remove a margem padrão */
+    padding: 0; /* Remove o padding padrão */
+ }
+  /* Fundo para a página de Matematica */
+  body.matematica {
+    background-image: url('../img/matematica.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.6); /* Camada preta com 60% de opacidade */
+    background-blend-mode: darken; /* Mistura a camada preta com a imagem */
+    height: 100vh; /* Garante que o fundo ocupe toda a altura da tela */
+    margin: 0; /* Remove a margem padrão */
+    padding: 0; /* Remove o padding padrão */
+ }
+
 /* Estilo geral da página */
 body {
     font-family: Arial, sans-serif;

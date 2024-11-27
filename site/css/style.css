@@ -1,0 +1,119 @@
+/* Estilização geral do site */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000; /* Fundo preto */
+    color: #f4f4f4; /* Texto claro */
+    transition: background-color 0.5s ease, color 0.5s ease; /* Transições suaves */
+    opacity: 1; /* Início visível */
+    animation: fadeIn 0.5s ease; /* Animação de fade-in ao carregar */
+}
+
+/* Animação de fade-in */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Classe para fade-out ao trocar de página */
+body.fade-out {
+    animation: fadeOut 0.5s ease; /* Animação de fade-out ao sair */
+    opacity: 0;
+}
+
+/* Define a animação de fade-out */
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+/* Suavização no scroll entre seções */
+html {
+    scroll-behavior: smooth; /* Ativa o scroll suave */
+}
+
+/* Estilo para o cabeçalho */
+header {
+    background: linear-gradient(to bottom, #ffd700, #4b0082); /* Gradiente de amarelo para roxo */
+    color: #ffffff; /* Texto branco */
+    text-align: center;
+    padding: 1em;
+    border-bottom: 2px solid #ffd700; /* Linha amarela de destaque */
+}
+
+/* Estilo para o título do cabeçalho */
+header h1 {
+    margin: 0;
+}
+
+/* Estilo da lista de navegação */
+nav ul {
+    list-style: none; /* Remove marcadores */
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Centraliza os itens */
+    background-color: #000; /* Fundo preto */
+    padding: 10px 0;
+    border-radius: 5px;
+}
+
+/* Estilo para os itens de navegação */
+nav ul li {
+    margin: 0 15px;
+}
+
+/* Estilo dos links da navegação */
+nav ul li a {
+    text-decoration: none; /* Remove sublinhado */
+    color: #ffd700; /* Amarelo brilhante */
+    font-weight: bold;
+    padding: 10px 15px;
+    border: 2px solid transparent; /* Borda invisível inicialmente */
+    border-radius: 5px;
+    transition: all 0.3s ease; /* Transições suaves */
+}
+
+/* Efeito ao passar o mouse nos links */
+nav ul li a:hover {
+    color: #ffffff; /* Branco */
+    border-color: #4b0082; /* Mostra borda roxa ao passar o mouse */
+}
+
+/* Estilo para os botões */
+button {
+    background-color: #4b0082; /* Roxo */
+    color: #ffd700; /* Amarelo */
+    border: 2px solid #ffd700; /* Contorno amarelo */
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+/* Efeito ao passar o mouse nos botões */
+button:hover {
+    background-color: #ffd700; /* Amarelo */
+    color: #4b0082; /* Roxo */
+    border-color: #4b0082; /* Contorno roxo */
+}
+
+/* Estilo para o rodapé */
+footer {
+    background: linear-gradient(to top, #4b0082, #ffd700); /* Gradiente inverso */
+    color: #000; /* Texto preto */
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    border-top: 2px solid #ffd700; /* Linha amarela no topo */
+}

@@ -16,3 +16,15 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
  });
+
+ // JavaScript para exibir o texto ao clicar no botão
+document.getElementById("show-info-button").addEventListener("click", function () {
+    const infoText = document.getElementById("site-info-text");
+    if (infoText.style.display === "none") {
+        infoText.style.display = "block"; // Mostra o texto
+        this.textContent = "Ocultar informações"; // Altera o texto do botão
+    } else {
+        infoText.style.display = "none"; // Oculta o texto
+        this.textContent = "Saiba mais sobre o site"; // Restaura o texto original do botão
+    }
+});

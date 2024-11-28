@@ -233,3 +233,59 @@ footer {
     margin-top: 20px;
     border-top: 2px solid #ffd700; /* Linha amarela no topo */
 }
+
+.tarefa-bone {
+    padding: 20px;
+    color: #f4f4f4; /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Estilo para o grid */
+.grid-container {
+    display: grid; /* Ativa o layout em grid */
+    grid-template-columns: repeat(2, 1fr); /* Cria duas colunas iguais */
+    gap: 15px; /* Espaçamento entre as imagens */
+    margin-top: 20px; /* Espaçamento entre o texto e o grid */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+}
+
+/* Estilo para as imagens */
+.grid-container img {
+    width: 100%; /* Imagem ocupa 100% do espaço permitido */
+    max-width: 200px; /* Limite de largura máxima */
+    height: auto; /* Mantém a proporção */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra ao redor da imagem */
+}
+
+/* Estilo para a seção */
+.site-info {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Estilo do botão */
+#show-info-button {
+    background-color: #ffd700; /* Amarelo */
+    color: #000; /* Preto */
+    border: 2px solid #4b0082; /* Contorno roxo */
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover no botão */
+#show-info-button:hover {
+    background-color: #4b0082; /* Roxo */
+    color: #ffd700; /* Amarelo */
+}
+
+/* Estilo do texto */
+#site-info-text {
+    color: #f4f4f4; /* Texto claro */
+    font-size: 18px;
+    margin-top: 15px;
+    line-height: 1.5;
+}
